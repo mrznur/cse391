@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Mahmudun Nur Miraz - Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8584240c12.js" crossorigin="anonymous"></script>
+</head>
+<body id="index-page">
+    <header class="main-header">
+        <div class="profile">
+            <img src="images/IMG_0654.jpg" alt="MD Mahmudun Nur Miraz" class="profile-img">
+            <h1 class="animated-heading">MD Mahmudun Nur Miraz</h1>
+            <p class="subtitle">Student @Brac University | Tech Enthusiast | Sports Lover | Music Lover</p>
+        </div>
+        <nav>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#links" class="nav-link">Links</a>
+            <a href="hobbies.html" class="nav-link">Hobbies</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="https://bracu.ac.bd" class="nav-link" target="_blank">BRAC University</a>
+        </nav>
+        <button onclick="toggleDarkMode()" class="dark-btn">🌙 Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="about" class="card">
+            <h2>Personal Info</h2>
+            <p>Hi, I am MD Mahmudun Nur Miraz, from Dhaka, Bangladesh.</p>
+            <h3>Education</h3>
+            <p>Studying at BRAC University in the department of Computer Science & Engineering.</p>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>Python</li>
+                <li>JavaScript, React.JS, ReactNative</li>
+                <li>Git & GitHub</li>
+            </ul>
+            <h3>
+                Other Skills
+            </h3>
+            <ul>
+                <li>Video Editing</li>
+                <li>Designing</li>
+            </ul>
+        </section>
+        <section id="links" class="card">
+            <h2>Categorized Links</h2>
+            <ul>
+                <li><a href="https://www.goal.com" target="_blank">Football</a></li>
+                <li><a href="https://www.espncricinfo.com/" target="_blank">Cricket</a></li>
+                <li><a href="https://discord.gg/G6gs9cv6" target="_blank">CSE 391 Discord</a></li>
+            </ul>
+        </section>
+        <section id="quote" class="card">
+            <h2>Favorite Quote</h2>
+            <blockquote>"Not all those who wander are lost." — Tolkien</blockquote>
+        </section>
+        <section id="list" class="card">
+            <h2>Top 5 Favorite Sports Team</h2>
+            <ol>
+                <li>Bangladesh</li>
+                <li>Brazil</li>
+                <li>FC Barcelona</li>
+                <li>Leicester City FC</li>
+                <li>Manchester City FC</li>
+            </ol>
+        </section>
+        <section id="table" class="card">
+            <h2>Used Techs for this Page</h2>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Web Design</td>
+                    <td>HTML page with CSS and JS enhancements</td>
+                </tr>
+                <tr>
+                    <td>A small personal portfolio project</td>
+                </tr>
+            </table>
+        </section>
+        <section class="card">
+            <h2>Contact Me</h2>
+            <form action="mailto:mahmudunmiraz@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <label>Name:</label><br>
+                <input type="text" name="name" required><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" required><br>
+                <label>Message:</label><br>
+                <textarea name="message" rows="4" cols="40" required></textarea><br>
+                <input type="submit" value="Send Message" class="submit-btn">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; MD Mahmudun Nur Miraz</p>
+        <p id="locationDate"></p>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/muhammad.mahmudun.nur" target="_blank"><i class="fa-brands fa-facebook"></i></i> Facebook</a> |
+            <a href="https://github.com/mrznur" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> |
+            <a href="mailto:mahmudunmiraz@email.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
