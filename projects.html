@@ -4,10 +4,103 @@
     <meta charset="UTF-8">
     <title>Projects</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .projects-container {
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(33,147,176,0.13);
+            padding: 40px 32px 32px 32px;
+            max-width: 480px;
+            width: 95%;
+            text-align: center;
+            margin: 40px 0;
+            animation: fadeInUp 1.2s cubic-bezier(0.4,0,0.2,1);
+        }
+        .projects-container h1 {
+            font-size: 2.2em;
+            color: #2193b0;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .projects-container p {
+            color: #444;
+            font-size: 1.1em;
+            margin-bottom: 24px;
+        }
+        .github-link-animate {
+            display: inline-block;
+            font-size: 1.15em;
+            color: #2193b0;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid #2193b0;
+            padding-bottom: 2px;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #e0f7fa 0%, #fff 100%);
+            box-shadow: 0 2px 8px rgba(33,147,176,0.07);
+            transition: 
+                color 0.3s, 
+                border-color 0.3s, 
+                background 0.3s, 
+                transform 0.3s, 
+                box-shadow 0.3s;
+            animation: fadeInUp 1.2s ease;
+        }
+        .github-link-animate:hover {
+            color: #fff;
+            border-color: #176582;
+            background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+            transform: scale(1.08) translateY(-2px);
+            box-shadow: 0 8px 32px rgba(33,147,176,0.18);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 18px;
+            color: #176582;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 16px;
+            padding: 6px 18px;
+            background: #f0f8ff;
+            transition: background 0.2s, color 0.2s;
+        }
+        .back-link:hover {
+            background: #2193b0;
+            color: #fff;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>My Projects</h1>
-    <p>Here are a few projects I've worked on recently...</p>
-    <a href="index.html">Back to Home</a>
+    <div class="projects-container">
+        <h1>My Projects</h1>
+        <p>Here are a few projects I've worked on recently.<br>
+        <span style="font-size:1.1em; color:#2193b0;">Want to see more?</span></p>
+        <a href="https://github.com/mrznur" target="_blank" class="github-link-animate">
+            Click here to visit my GitHub profile to see the projects that I have worked on recently
+        </a>
+        <br>
+        <a href="index.html" class="back-link">&#8592; Back to Home</a>
+    </div>
 </body>
 </html>
